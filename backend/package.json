@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Yanniv game backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --require babel-register tests/ --exit",
+    "debug": "nodemon --inspect --exec babel-node --presets babel-preset-env ./index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "romain de-coster (romain.decoster@pm.me)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5",
+    "socket.io": "^2.3.0",
+    "socketio-jwt": "^4.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
